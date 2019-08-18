@@ -10,4 +10,7 @@ Our objective is ti find
 4. behaviour of various gaming area.
 5. playing style
 
-Our data crunching gives insight on best strategy and game approach which are most efficient for players.
+Our data crunching gives insight on
+1. best strategy and 
+2. game approach 
+3. Player efficiency

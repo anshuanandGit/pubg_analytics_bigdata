@@ -1,0 +1,17 @@
+hdfs dfs -copyFromLocal /home/anshua1/input/kill_sample.csv /anshua1/proj/
+
+spark-submit --class com.mycompany.assocrule3.AssociationRule3 --master spark://spark01:7077 /home/anshua1/AssocRule3-1.0-SNAPSHOT.jar
+
+spark-submit --class com.mycompany.projvecspawnfactor.ProjVecSpawnFactor --master spark://spark01:7077 /home/anshua1/ProjVecSpawnFactor-1.0-SNAPSHOT.jar
+
+spark-submit --class com.mycompany.projcluster.ProjCluster --master spark://spark01:7077 /home/anshua1/ProjCluster-1.0-SNAPSHOT.jar
+
+spark-submit --class com.mycompany.projpredictor.ProjPredictor --master spark://spark01:7077 /home/anshua1/ProjPredictor-1.0-SNAPSHOT.jar
+
+spark-submit --class com.mycompany.projpredictornv.ProjPredictorNv --master spark://spark01:7077 /home/anshua1/ProjPredictorNV-1.0-SNAPSHOT.jar
+
+hadoop jar /home/anshua1/VSFMap-1.0-SNAPSHOT-jar-with-dependencies.jar com.mycompany.vsfmap.VSFMap  /anshua1/input1/vsf.csv /anshua1/outVSF
+
+hadoop jar /home/anshua1/ProjVantageMap-1.0-SNAPSHOT-jar-with-dependencies.jar com.mycompany.projvantagemap.ProjVantage  /anshua1/input1/Deaths_Final.csv /anshua1/outVNT
+
+hadoop jar /home/anshua1/ProjRiskArMap-1.0-SNAPSHOT-jar-with-dependencies.jar com.mycompany.projriskarmap.ProjRiskAr  /anshua1/input1/Deaths_Final.csv /anshua1/outRSK
