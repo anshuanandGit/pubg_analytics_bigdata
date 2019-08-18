@@ -14,3 +14,5 @@ Our data crunching gives insight on
 1. best strategy and 
 2. game approach 
 3. Player efficiency
+
+This code can run on Big data cluster.
